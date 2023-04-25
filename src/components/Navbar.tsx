@@ -61,7 +61,7 @@ const Navbar = () => {
                         <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="mailto:invasionfajar@gmail.com" rel="noopener noreferrer">
                         <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
                     </Link>
                 </ul>

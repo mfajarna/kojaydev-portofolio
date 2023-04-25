@@ -3,11 +3,11 @@ import Link from 'next/link'
 import * as React from 'react'
 import { CardProjectComponentProps } from '../types'
 
-const CardProjectsComponent:React.FC<CardProjectComponentProps> = ({title, tech, projectUrl}) => {
+const CardProjectsComponent:React.FC<CardProjectComponentProps> = ({title, tech, projectUrl, projectStorage}) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#1A2249] to-[#709dff] '>
         <Image
-            src={projectUrl}
+            src={projectStorage}
             alt='/'
             width='500'
             height='100'
@@ -18,9 +18,10 @@ const CardProjectsComponent:React.FC<CardProjectComponentProps> = ({title, tech,
             <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
             <p className='pb-4 pt-2 text-white text-center'>{tech}</p>
             <Link
-                href='/'
+                href={projectUrl}
+                rel="noopener noreferrer"
             >
-                <p className='text-center py-3 rounded-lg bg-white text-gray-600 font-bold text-lg cursor-pointer '>More Info</p>
+                <p className='text-center py-3 rounded-lg bg-white text-gray-600 font-bold text-lg cursor-pointer '>Repository</p>
             </Link>
         </div> 
     </div>

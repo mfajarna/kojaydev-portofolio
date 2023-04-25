@@ -1,16 +1,18 @@
+import { redirectToUrl } from '@/helpers/SosmedLink'
 import * as React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaCloudDownloadAlt, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Main = () => {
+
   return (
     <div id='main' className='w-full h-screen text-center'>
         <div className='max-w[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>let&apos;s build something together</p>
                 <h1 className='py-4 text-gray-700'>
-                    HI I&apos;m 
-                    <span className='text-[#070A52]'>&nbsp;Kojaydev</span>
+                    HI I&apos;m&nbsp;
+                    <span className='text-[#070A52] underline decoration-sky-500'>Kojaydev</span>
                 </h1>
 
                 <h1 className='py-1 text-gray-700'>
@@ -33,21 +35,21 @@ const Main = () => {
                 </div>
 
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a target="_blank" href="https://www.linkedin.com/in/muhammad-fajar-nugroho-alam-654311200/" rel="noopener noreferrer" className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <FaLinkedinIn />
-                    </div>
+                    </a>
 
-                    <div className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a target="_blank" href="https://github.com/mfajarna" rel="noopener noreferrer" className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <FaGithub />
-                    </div>
+                    </a>
 
-                    <div className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a target="_blank" href="mailto:invasionfajar@gmail.com" rel="noopener noreferrer" className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <AiOutlineMail />
-                    </div>
+                    </a>
 
-                    <div className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <a target="_blank" href="https://twitter.com/kojaydev" rel="noopener noreferrer" className='rounded-full shadow-lg shadow-indigo-500/50 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <FaTwitter />
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
