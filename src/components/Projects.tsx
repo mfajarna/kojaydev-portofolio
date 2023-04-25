@@ -13,13 +13,9 @@ const Projects = () => {
         statusBtn ? setData(slicingData) : setData(dataProjects);
     }
 
-    React.useEffect(() => {
-
-    }, [dataProjects])
-
 
   return (
-    <div id='projects' className='w-full'>
+    <div data-aos="fade-left" id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='text-xl tracking-widest uppercase text-[#1A2249]'>
                 Projects
