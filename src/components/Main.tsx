@@ -1,4 +1,5 @@
 import { redirectToUrl } from '@/helpers/SosmedLink'
+import Link from 'next/link'
 import * as React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaCloudDownloadAlt, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
@@ -26,12 +27,12 @@ const Main = () => {
                 </p>
 
                 <div className='py-4 flex justify-center items-center'>
-                    <a href='/api/download/' className='rounded-lg bg-indigo-500 shadow-lg shadow-indigo-500/50 justify-center items-center p-3 hover:scale-105 ease-in duration-300'>
+                    <Link href='/api/download/' className='rounded-lg bg-indigo-500 shadow-lg shadow-indigo-500/50 justify-center items-center p-3 hover:scale-105 ease-in duration-300'>
                         <div className='items-center flex'>
                             <FaCloudDownloadAlt color='white' />
                             <p className='text-white font-semi-bold ml-2'>Download Resume</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
