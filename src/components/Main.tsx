@@ -11,12 +11,12 @@ const Main = () => {
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>let&apos;s build something together</p>
                 <h1 className='py-4 text-gray-700'>
-                    HI I&apos;m&nbsp;
+                    HI I&apos;m &nbsp;
                     <span className='text-[#070A52] underline decoration-sky-500'>Kojaydev</span>
                 </h1>
 
                 <h1 className='py-1 text-gray-700'>
-                    A Software Engineerers
+                    A Software Engineer
                 </h1>
 
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
@@ -25,13 +25,13 @@ const Main = () => {
                 Well-versed in software trends and confident in multiple languages, frameworks and programming tools.
                 </p>
 
-                <div className='py-4'>
-                    <button onClick={() => alert('wait...')} className='bg-indigo-500 shadow-lg shadow-indigo-500/50 justify-center items-center p-3 hover:scale-105 ease-in duration-300'>
-                        <div className='flex items-center'>
-                        <FaCloudDownloadAlt />
-                        <p className='text-white font-semi-bold ml-2'>Download Resume</p>
+                <div className='py-4 flex justify-center items-center'>
+                    <a href='/api/download/' className='rounded-lg bg-indigo-500 shadow-lg shadow-indigo-500/50 justify-center items-center p-3 hover:scale-105 ease-in duration-300'>
+                        <div className='items-center flex'>
+                            <FaCloudDownloadAlt color='white' />
+                            <p className='text-white font-semi-bold ml-2'>Download Resume</p>
                         </div>
-                    </button>
+                    </a>
                 </div>
 
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
