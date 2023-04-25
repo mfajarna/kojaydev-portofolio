@@ -16,7 +16,7 @@ const Main = () => {
                 </h1>
 
                 <h1 className='py-1 text-gray-700'>
-                    A Software Engineer
+                    A Software Engineerers
                 </h1>
 
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
